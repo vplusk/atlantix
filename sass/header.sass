@@ -1,0 +1,234 @@
+@import "bourbon"
+@import "vars.sass"
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+h1
+	font-family: "PTSansBold", sans
+	font-size: em(40px)
+	line-height: 1.2
+	text-transform: uppercase
+	color: #fff
+	margin: 0
+
+h2
+	font-family: "MuseoRegular", sans
+	font-size: em(26px)
+	color: #4da2e3
+	text-align: center
+	.light
+		font-family: "Museo300", Arial, sans
+
+h3
+	font-family: "PTSansRegular", sans
+	font-size: em(18px)
+	color: #fff
+	margin: 20px 0 0
+
+h4
+	font-family: "PTSansBold", Arial, sans
+	font-size: em(18px)
+	color: #666	
+
+a, a:hover
+	color: #fff
+	text-decoration: none
+
+.header-wrap
+	background-image: url(../img/header-bg.jpg)
+	background-size: cover
+	min-height: 600px
+
+.top-line
+	padding: 20px 20px 0
+	margin-bottom: 188px
+
+.logo
+	font-family: "PacificoRegular"
+	color: #fff
+	font-size: em(28px)
+	float: left
+
+.main-menu
+	float: right	
+	a
+		font-family: "PTSansBold", serif
+		font-size: em(13px)
+		text-transform: uppercase
+		margin-right: 30px
+.sign
+	a
+		border: 1px solid #fff
+		border-radius: 2px
+		padding: 1em
+		margin: 0 -3px
+		&:first-child
+			border-right: none
+		&:hover
+			background-color: rgba(255,255,255,0.5)
+
+.promo-links
+	margin-top: 53px
+	a
+		font-family: "PTSansBold", Arial, sans
+		font-size: em(13px)
+		text-transform: uppercase
+		padding: 15px 2.2em
+		border-radius: 3px
+		width: 144px
+		transition: all 0.2s ease-in-out
+
+.learn-more
+	border: 1px solid #fff	
+	&:hover
+		background-color: rgba(255,255,255,0.5)
+
+.try
+	background-color: #9c6ecc
+	margin-left: 20px
+	border: none
+	&:hover
+		background-color: darken(#9c6ecc, 10%)
+
+section
+	padding: 75px 0
+	h2
+		margin-bottom: 75px
+		&:after
+			content: url(../img/divider.png)
+			display: block
+
+.item
+	margin-bottom: 31px
+
+.item-wrap
+	display: table-row
+	div
+		display: table-cell
+
+.item-text
+	padding-left: 16px
+
+p
+	font-family: "PTSansRegular", Arial, sans
+	font-size: em(15px)
+	color: #8a8a8a
+
+.section-two
+	border-top: 1px solid #eaeaea;
+
+.logo-item
+	text-align: center
+
+video
+	width: 100%
+	max-height: 100%
+	box-sizing: border-box
+	&::-webkit-media-controls-enclosure
+		display:none
+
+#player-overlay
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: #ccc
+	z-index: 999
+
+#play-pause
+	position: absolute
+	color: #fff
+	top: 70%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 102
+	background-color: transparent
+	border: none
+	&:focus
+		outline: none
+
+.bold
+	font-family: "Museo700", sans
+
+.sign
+	text-align: center
+	p
+		color: #666
+		font-size: em(18px)
+		margin-bottom: 39px
+	input, button
+		border: none
+		border-radius: 2px
+		//height: 53px
+		font-size: 14px
+		padding: 1.2em 0
+		&:focus
+			outline: none
+			border: 1px solid #9c6ecc
+	input
+		background-color: #ece9e9
+		color: #7a7a7a
+		font-family: "PTSansItalic", sans
+		//font-size: 14px
+		width: 340px
+		padding-left: 15px
+	button
+		background-color: #9c6ecc
+		color: #fff
+		font-family: "PTSansBold", sans
+		//font-size: 13px
+		text-transform: uppercase
+		border-left: 1px solid #c2a8da
+		width: 134px
+		margin-left: -4px;
+	h4
+		margin-top: 40px
+		font-size: 20px
+	
+footer
+	min-height: 120xp
+	background-color: #333
+	color: #fff
+	padding: 40px 0
+	nav
+		a
+			text-transform: uppercase
+			margin-right: 13px
+			font-family: "PTSansBold", sans
+			font-size: em(13px)
+.copyright
+	p
+		font-family: ""
+
+
+.footer-menu
+.copyright
+	float: left
+.social
+	float: right
+	a
+		margin-right: 15px
+
+.fb
+	background: url(../img/fb.png)
+	width: 11px
+	height: 19px
+
+.twitter
+	background-image: url(../img/twitter.png)
+	width: 18px
+	height: 19px
